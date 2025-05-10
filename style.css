@@ -1,0 +1,47 @@
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.login-btn:hover {
+  background-color: #555;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#galleryOptions ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+#galleryOptions li {
+  margin: 10px 0;
+}
+
+#galleryOptions a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+#galleryOptions a:hover {
+  text-decoration: underline;
+  color: #005599;
+}
+

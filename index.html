@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rezwan | CSE Portfolio</title>
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    /* পৃষ্ঠা বোডির জন্য CSS, যেখানে ফন্ট, ব্যাকগ্রাউন্ড কালার এবং প্যাডিং নিয়ন্ত্রিত হয়েছে */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eafaf1;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* হেডারের জন্য CSS, যেখানে ব্যাকগ্রাউন্ড কালার, টেক্সট সেন্টার এবং প্যাডিং যুক্ত করা হয়েছে */
+    .header {
+      background-color: #006400;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    /* কনটেইনারের জন্য CSS, যেখানে ছবির অবস্থান ঠিক করা হয়েছে */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    /* প্রোফাইল ছবির জন্য CSS, ছবির আকার এবং সীমানা নির্ধারণ */
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    /* নেভিগেশন বার এর জন্য CSS */
+    .navbar {
+      background-color: #004d26;
+      padding: 1rem;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    /* নেভিগেশন লিঙ্কের জন্য স্টাইল */
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* প্রতিটি সেকশনের জন্য CSS */
+    .section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: #ffffff;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    /* গ্যালারি ছবির জন্য CSS */
+    .gallery img {
+      width: 100%;
+      max-width: 250px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    /* গ্যালারি সেকশনের জন্য CSS */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    /* ব্লগ পোস্টের জন্য CSS */
+    .blog-post {
+      margin-bottom: 20px;
+    }
+    .blog-post h3 {
+      margin-bottom: 5px;
+    }
+    /* ফর্মের ইনপুট এবং টেক্সট এরিয়া সেজন্য CSS */
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    /* ফর্মের সাবমিট বাটনের জন্য CSS */
+    form button {
+      background-color: #006400;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    /* ফুটারের জন্য CSS */
+    footer {
+      background-color: #004d26;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- হেডার সেকশন যেখানে নাম এবং প্রোফাইল ছবি রয়েছে -->
+  <header class="header">
+  <div class="container">
+    <!-- এখানে ছবির পাথ আপডেট করুন -->
+    <img src="r1.jpg" alt="Rezwan" class="profile-pic" />
+    <h1>Rezwan</h1>
+    <p>Computer Science & Engineering Student | Future Tech Leader</p>
+  </div>
+</header>
+
+  <!-- নেভিগেশন মেনু -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#academic">Academic</a></li>
+      <li><a href="#sports">Sports</a></li>
+      <li><a href="#study">Study</a></li>
+      <li><a href="bcs.html">BCS</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="/admin-login">Admin</a></li>
+    </ul>
+  </nav>
+
+  <!-- হোম সেকশন -->
+  <section id="home" class="section">
+    <h2>Welcome to Rezwan's Portfolio</h2>
+    <p>This is the official portfolio of Rezwan — CSE student and future tech leader.</p>
+  </section>
+
+  <!-- একাডেমিক ব্যাকগ্রাউন্ড সেকশন -->
+  <section id="academic" class="section">
+    <h2>Academic Background</h2>
+    <p>Studying BSc in Computer Science and Engineering at North University Bangladesh. Strong academic results and interest in Data Structures, Algorithms, and AI.</p>
+  </section>
+
+  <!-- স্পোর্টস সেকশন -->
+  <section id="sports" class="section">
+    <h2>Sports & Activities</h2>
+    <p>Passionate about football and table tennis. Regular participant in inter-university tournaments and fitness activities.</p>
+  </section>
+
+  <!-- স্টাডি ফোকাস সেকশন -->
+  <section id="study" class="section">
+    <h2>Study Focus</h2>
+    <p>Dedicated to continuous learning in software development, system design, and problem solving. Consistent LeetCode and HackerRank coder.</p>
+  </section>
+
+  <!-- BCS লক্ষ্য সেকশন -->
+  <section id="bcs" class="section">
+    <h2>BCS Goal</h2>
+    <p>Dreaming to serve the nation as a BCS Cadre while upholding Islamic values and contributing to the digital transformation of Bangladesh.</p>
+  </section>
+
+  <!-- প্রকল্পের সেকশন -->
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <ul>
+      <li><strong>Smart Attendance System</strong> - Using facial recognition and IoT</li>
+      <li><strong>Islamic Chatbot</strong> - Answers queries based on Quran & Hadith</li>
+      <li><strong>Rezwan Portal</strong> - A dashboard for students & teachers</li>
+    </ul>
+  </section>
+
+ 
+<!-- Gallery Options -->
+
+<section id="gallery" class="section">
+  <h2 onclick="toggleGallery()" style="cursor: pointer;">
+    📁 Gallery ▼
+  </h2>
+
+  <div id="galleryOptions" style="display: none; margin-top: 10px;">
+    <ul style="list-style: none; padding-left: 0;">
+      <li><a href="birthday.html" target="_blank">📂 Birthday Event</a></li>
+      <li><a href="shibir.html" target="_blank">📂 Shibir Tour</a></li>
+      <li><a href="picnic2023.html" target="_blank">📂 Picnic 2023</a></li>
+      <li><a href="programming_contest.html" target="_blank">📂 Programming Contest</a></li>
+      <li><a href="seminars.html" target="_blank">📂 Seminars & Workshops</a></li>
+      <li><a href="family.html" target="_blank">📂 Family </a></li>
+    </ul>
+  </div>
+</section>
+  <!-- ব্লগ সেকশন -->
+  <section id="blog" class="section">
+    <h2>My Blog</h2>
+    <div class="blog-post">
+      <h3>How I Got Into CSE</h3>
+      <p>Choosing CSE was one of the best decisions of my life...</p>
+    </div>
+    <div class="blog-post">
+      <h3>BCS Preparation Strategy</h3>
+      <p>Here are my steps to prepare for the BCS exams while being a tech enthusiast...</p>
+    </div>
+  </section>
+
+  <!-- যোগাযোগ সেকশন -->
+  <section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <!-- মোবাইল নম্বরগুলো এখানে দেখানো হলো -->
+  <p>Mobile Numbers: 01764949674, 01568091264</p>
+  <!-- ইমেইল, ফেসবুক এবং লিঙ্কডইন প্রোফাইল লিঙ্ক আইকন সহ -->
+  <p>Email: <a href="mailto:info.rezwanm@gmail.com"><i class="fas fa-envelope"></i></a></p>
+  <p>Facebook: <a href="https://www.facebook.com/rez1ahmd" target="_blank"><i class="fab fa-facebook"></i></a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/rez1ahmd/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+</section>
+
+
+  <!-- ফুটার সেকশন -->
+  <footer class="footer">
+    <p>&copy; 2025 Rezwan. All rights reserved.</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
