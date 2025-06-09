@@ -17,15 +17,27 @@
       margin: 0;
       padding: 0;
     }
+        /* হেডারের ডিজাইন: ব্যাকগ্রাউন্ড, লেখা সাদা, সেন্টার টেক্সট */
 
-    /* হেডারের ডিজাইন: ব্যাকগ্রাউন্ড, লেখা সাদা, সেন্টার টেক্সট */
     header {
-      background-color: #006400;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      position: relative;
-    }
+  background: linear-gradient(
+    135deg,
+    #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff,
+    #0000ff, #4b0082, #8f00ff, #ff1493, #ff69b4,
+    #ffa500, #7fff00, #00fa9a, #40e0d0, #1e90ff,
+    #9932cc, #ff4500, #adff2f, #dc143c, #ffd700
+  );
+  background-size: 400% 400%;
+  animation: headerGradient 20s ease infinite;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+@keyframes headerGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
     /* হোম বাটনের স্টাইল: অবস্থান, ব্যাকগ্রাউন্ড, রং, বর্ডার */
     .home-button {
@@ -126,12 +138,35 @@
 
     /* ফুটারের ডিজাইন */
     footer {
-      background-color: #004d26;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
+      background: linear-gradient(
+    135deg,
+    #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff,
+    #0000ff, #4b0082, #8f00ff, #ff1493, #ff69b4,
+    #ffa500, #7fff00, #00fa9a, #40e0d0, #1e90ff,
+    #9932cc, #ff4500, #adff2f, #dc143c, #ffd700
+  );
+  background-size: 400% 400%;
+  animation: headerGradient 20s ease infinite;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+@keyframes headerGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+    .profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  object-fit: fill;
+  border: 5px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 0 auto;
+}
+
   </style>
 </head>
 
@@ -143,8 +178,8 @@
   <a href="index.html" class="home-button">Home</a>
   
   <!-- প্রোফাইল ছবি -->
-  <img src="m.jpg" alt="ICS" class="profile-pic" />
-  
+ <img src="m.jpg" alt="ICS" class="profile-pic">
+ 
   <!-- নাম এবং টাইটেল -->
   <h1 class="jumping-name">Rezwan</h1>
   <h2>Family Moments</h2>
@@ -165,7 +200,7 @@
 
 <!-- নিচের অংশ: ফুটার -->
 <footer>
-  <p>&copy; 2025 Rezwan | Sibir Tour Gallery</p>
+  <p>&copy; 2025 Rezwan | Shibir Tour Gallery</p>
 </footer>
 
 </body>

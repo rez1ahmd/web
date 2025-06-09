@@ -150,23 +150,52 @@
     padding: 1rem;
   }
   .header {
-  background: linear-gradient(
-    135deg,
-    #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff,
-    #0000ff, #4b0082, #8f00ff, #ff1493, #ff69b4,
-    #ffa500, #7fff00, #00fa9a, #40e0d0, #1e90ff,
-    #9932cc, #ff4500, #adff2f, #dc143c, #ffd700
-  );
+  background:linear-gradient(
+  180deg,
+  #ff0000, #ff4000, #ff7f00, #ffaa00, #ffcc00,
+  #ffff00, #ccff00, #99ff00, #66ff00, #33ff00,
+  #00ff00, #00ff33, #00ff66, #00ff99, #00ffcc,
+  #00ffff, #00ccff, #0099ff, #0066ff, #0033ff,
+  #0000ff, #3300ff, #6600ff, #8000ff, #8f00ff,
+  #9933ff, #aa66ff, #bb99ff, #ccbbff, #ddbfff,
+  #ffb6c1, #ff69b4, #ff1493, #db7093, #c71585,
+  #ff4500, #ff6347, #ff7f50, #ff8c00, #ffa500,
+  #ffd700, #ffff54, #f0e68c, #eee8aa, #fafad2,
+  #adff2f, #7fff00, #7cfc00, #00fa9a, #40e0d0,
+  #48d1cc, #00ced1, #20b2aa, #5f9ea0, #4682b4,
+  #1e90ff, #6495ed, #00bfff, #87cefa, #add8e6,
+  #9932cc, #8a2be2, #9400d3, #8b008b, #800080,
+  #6a5acd, #7b68ee, #9370db, #ba55d3, #da70d6,
+  #ff00ff, #ff33cc, #ff66cc, #ff99cc, #ffc0cb,
+  #dc143c, #cd5c5c, #e9967a, #f08080, #f4a460,
+  #d2691e, #a0522d, #8b4513, #deb887, #f5deb3,
+  #ffe4b5, #fffacd, #ffffe0, #f0fff0, #f0ffff,
+  #e6e6fa, #d8bfd8, #dda0dd, #ee82ee, #ffc3a0,
+  #ffa07a, #ffdab9, #ffe4e1, #ffe4b5, #faf0e6
+);
+
   background-size: 400% 400%;
-  animation: headerGradient 20s ease infinite;
   color: white;
   text-align: center;
-  padding: 2rem;
+  padding: 0.1rem;
 }
 @keyframes headerGradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+@keyframes zoomEffect {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.zoom-text {
+  animation: zoomEffect 2s infinite;
+  display: inline-block;
 }
 
 
@@ -178,7 +207,7 @@
  <header class="header">
   <div class="container">
     <img src="r1.jpg" alt="Rezwan" class="profile-pic" />
-    <h1><b>Rezwan</b></h1>
+    <h1 class="zoom-text">Rezwan</h1>
     </div>
     <div class="scroll-text">
     <p>Computer Science & Engineering Student | Future Tech Leader</p>
