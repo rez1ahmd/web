@@ -8,137 +8,170 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rezwan | CSE Portfolio</title>
   <link rel="stylesheet" href="/style.css" />
-  <style>
-    /* পৃষ্ঠা বোডির জন্য CSS, যেখানে ফন্ট, ব্যাকগ্রাউন্ড কালার এবং প্যাডিং নিয়ন্ত্রিত হয়েছে */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #eafaf1;
-      margin: 0;
-      padding: 0;
-    }
+ <style>
+  /* পৃষ্ঠা বোডির জন্য CSS, যেখানে ফন্ট, ব্যাকগ্রাউন্ড কালার এবং প্যাডিং নিয়ন্ত্রিত হয়েছে */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+      135deg,
+      #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff,
+      #0000ff, #4b0082, #8f00ff, #ff1493, #ff69b4,
+      #ffa500, #7fff00, #00fa9a, #40e0d0, #1e90ff,
+      #9932cc, #ff4500, #adff2f, #dc143c, #ffd700
+    );
+    background-size: 400% 400%;
+    animation: gradientWave 25s ease infinite;
+  }
 
-    /* হেডারের জন্য CSS, যেখানে ব্যাকগ্রাউন্ড কালার, টেক্সট সেন্টার এবং প্যাডিং যুক্ত করা হয়েছে */
-    .header {
-      background-color: #006400;
-      color: white;
-      text-align: center;
-      padding: 2rem;
-    }
-    /* কনটেইনারের জন্য CSS, যেখানে ছবির অবস্থান ঠিক করা হয়েছে */
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    /* প্রোফাইল ছবির জন্য CSS, ছবির আকার এবং সীমানা নির্ধারণ */
-    .profile-pic {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border: 4px solid white;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
-   .scroll-text {
-      overflow: hidden;
-      white-space: nowrap;
-      box-sizing: border-box;
-      margin-top: 1rem;
-    }
+  @keyframes gradientWave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
-    .scroll-text p {
-      display: inline-block;
-      padding-left: 100%;
-      animation: scroll 10s linear infinite;
-      font-weight: bold;
-    }
+  /* হেডারের জন্য CSS, যেখানে ব্যাকগ্রাউন্ড কালার, টেক্সট সেন্টার এবং প্যাডিং যুক্ত করা হয়েছে */
+  .header {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
 
-    @keyframes scroll {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
+  /* নিচের সব কিছু অপরিবর্তিত থাকছে */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  .scroll-text {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    margin-top: 1rem;
+  }
+
+  .scroll-text p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 10s linear infinite;
+    font-weight: bold;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .navbar {
+    background-color: #004d26;
+    padding: 1rem;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .blog-post {
+    margin-bottom: 20px;
+  }
+
+  .blog-post h3 {
+    margin-bottom: 5px;
+  }
+
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  form button {
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  footer {
+    background-color: #004d26;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  .header {
+  background: linear-gradient(
+    135deg,
+    #ff0000, #ff7f00, #ffff00, #00ff00, #00ffff,
+    #0000ff, #4b0082, #8f00ff, #ff1493, #ff69b4,
+    #ffa500, #7fff00, #00fa9a, #40e0d0, #1e90ff,
+    #9932cc, #ff4500, #adff2f, #dc143c, #ffd700
+  );
+  background-size: 400% 400%;
+  animation: headerGradient 20s ease infinite;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+@keyframes headerGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 
+</style>
 
-    /* নেভিগেশন বার এর জন্য CSS */
-    .navbar {
-      background-color: #004d26;
-      padding: 1rem;
-    }
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      margin: 0;
-      padding: 0;
-    }
-    /* নেভিগেশন লিঙ্কের জন্য স্টাইল */
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    /* প্রতিটি সেকশনের জন্য CSS */
-    .section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      background-color: #ffffff;
-      border-radius: 10px;
-      margin-top: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    /* গ্যালারি ছবির জন্য CSS */
-    .gallery img {
-      width: 100%;
-      max-width: 250px;
-      margin: 10px;
-      border-radius: 10px;
-    }
-    /* গ্যালারি সেকশনের জন্য CSS */
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    /* ব্লগ পোস্টের জন্য CSS */
-    .blog-post {
-      margin-bottom: 20px;
-    }
-    .blog-post h3 {
-      margin-bottom: 5px;
-    }
-    /* ফর্মের ইনপুট এবং টেক্সট এরিয়া সেজন্য CSS */
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 5px 0 15px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    /* ফর্মের সাবমিট বাটনের জন্য CSS */
-    form button {
-      background-color: #006400;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    /* ফুটারের জন্য CSS */
-    footer {
-      background-color: #004d26;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
 </head>
 <body>
   <!-- হেডার সেকশন যেখানে নাম এবং প্রোফাইল ছবি রয়েছে -->
