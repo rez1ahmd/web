@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezwan's Sports Zone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, indigo, violet, pink, gold);
+            background-size: 200% 200%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.85);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .section {
+            padding: 30px;
+            color: white;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 200px;
+            border-radius: 10px;
+            border: 2px solid white;
+        }
+
+        .blog {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .blog h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rezwan's Sports Moments</h1>
+        <p>Celebrate every victory and memory</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#cricket">Cricket</a>
+        <a href="#football">Football</a>
+        <a href="#carrom">Carrom</a>
+        <a href="#badminton">Badminton</a>
+        <a href="#other">Other</a>
+        <a href="#blog">Blog</a>
+    </nav>
+
+    <div class="section" id="cricket">
+        <h2>Cricket Gallery</h2>
+        <div class="gallery">
+            <!-- Add your cricket images here -->
+            <img src="cricket1.jpg" alt="Cricket Moment">
+        </div>
+    </div>
+
+    <div class="section" id="football">
+        <h2>Football Gallery</h2>
+        <div class="gallery">
+            <!-- Add your football images here -->
+            <img src="football1.jpg" alt="Football Moment">
+        </div>
+    </div>
+
+    <div class="section" id="carrom">
+        <h2>Carrom Gallery</h2>
+        <div class="gallery">
+            <!-- Add your carrom images here -->
+            <img src="carrom1.jpg" alt="Carrom Moment">
+        </div>
+    </div>
+
+    <div class="section" id="badminton">
+        <h2>Badminton Gallery</h2>
+        <div class="gallery">
+            <!-- Add your badminton images here -->
+            <img src="badminton1.jpg" alt="Badminton Moment">
+        </div>
+    </div>
+
+    <div class="section" id="other">
+        <h2>Other Games Gallery</h2>
+        <div class="gallery">
+            <!-- Add your other games images here -->
+            <img src="other1.jpg" alt="Other Game Moment">
+        </div>
+    </div>
+
+    <div class="section" id="blog">
+        <h2>Sports Blog</h2>
+        <div class="blog">
+            <h3>My Favorite Cricket Match</h3>
+            <p>I still remember the day I hit the winning six. It was an unforgettable moment...</p>
+        </div>
+        <div class="blog">
+            <h3>Night Football Under Floodlights</h3>
+            <p>Playing with my friends at night with floodlights on felt like a stadium experience!</p>
+        </div>
+        <!-- Add more blog entries as needed -->
+    </div>
+</body>
+</html>
